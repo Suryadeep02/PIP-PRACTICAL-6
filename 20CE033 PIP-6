@@ -1,0 +1,15 @@
+#NAME AND ID : GOHIL SURYADEEPSINH 20CE033
+#Number of Occurance of Words
+
+t = int(input())
+
+dictonary = {}
+for i in range(t):
+    str = input()
+    if str in dictonary:
+        dictonary[str] +=1
+    else:
+        dictonary[str] = 1
+print(len(dictonary))
+for i in dictonary.values():
+    print(i ,end=' ')
